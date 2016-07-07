@@ -1,5 +1,5 @@
 # lazy-cd
-Simple Windows batch file that executes DIR and CD (CHDIR) commands to aid quick &amp; lazy directory switching!  Save the batch file locally, then add the batch filename to the System Environment PATH variable so that it's available in all directories.
+Simple Windows batch file that executes DIR and CD (CHDIR) commands using short-hand equivalents to aid quick &amp; lazy directory switching!  Save the batch file locally, then add the batch filename to the System Environment PATH variable so that it's available in all directories.
 
 Sample Directory Structure:
 - c:\HelloYou\
