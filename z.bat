@@ -1,9 +1,9 @@
+@echo off
 REM lazy-cd
 REM https://github.com/Delie/lazy-cd/
 REM Windows batch file to aid quick & lazy directory switching!
 REM Created by Andrew Delicata - https://github.com/Delie
 
-@echo off
 set "targetDir="
 setlocal enabledelayedexpansion
 set v1=%1
