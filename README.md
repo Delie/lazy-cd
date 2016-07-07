@@ -2,7 +2,7 @@
 Simple Windows batch file that executes DIR and CD (CHDIR) commands using short-hand equivalents to aid quick &amp; lazy directory switching!  
 
 Set-up:
-- Save the batch file locally.  
+- Save z.bat locally.  
 - Go to System Properties, Environment Variables.  In the System Variables panel scroll to the Path value, click Edit, then Edit Text, then append a semicolon followed by the path to the batch file excluding the filename.  Make sure to include a trailing back-slash.  This will make the script available globally.  You may need to close & reopen any existing CMD windows.
 
 Sample Directory Structure:
