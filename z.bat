@@ -2,7 +2,7 @@
 REM  lazy-cd
 REM  https://github.com/Delie/lazy-cd/
 REM  Windows batch file to aid quick & lazy directory switching!
-REM  Written by Andrew Delicata - https://github.com/Delie
+REM  Created by Andrew Delicata - https://github.com/Delie
 
 SET "targetDir="
 SETLOCAL enabledelayedexpansion
@@ -18,12 +18,12 @@ IF "%1%." =="." (
 IF %1 == \ (
     ENDLOCAL
     CD\
-    GOTO :eof
+    GOTO :refresh
 )
 IF %1 == .. (
     ENDLOCAL
     CD..
-    GOTO :eof
+    GOTO :refresh
 )
 IF "%2." =="." SET /a %v2 = 1
 FOR /d %%f in (%v1%*) do (
@@ -41,7 +41,8 @@ IF "%targetDir%." == "." (
 )
 CD %targetDir%
 
-REM Uncomment the line below to perform a new DIR after changing directory
-REM DIR /o:g /o:n
+:refresh
+REM Comment out the line below if you don't want to perform a new DIR after changing directory
+DIR /o:g /o:n
 
 :eof
